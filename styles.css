@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Italiana&family=Montserrat:wght@100&family=Roboto+Slab:wght@300;400&family=Roboto:ital,wght@0,100;0,400;0,900;1,100;1,900&family=Shadows+Into+Light&family=Teko:wght@300&family=Titillium+Web:wght@200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-image: linear-gradient(
+    to left,
+    #301939,
+    #795999,
+    #715999,
+    #9079b9
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+hr {
+  margin-top: 70px;
+  width: 50%;
+}
+
+.title {
+  font-size: 40px;
+  text-shadow: 5px 5px 15px black;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  text-shadow: 5px 5px 15px black;
+}
+
+.info2 {
+  margin-top: 10px;
+  margin-left: 15%;
+  text-shadow: 5px 5px 15px black;
+  font-size: 1.5rem;
+}
+
+main {
+  margin: 50px 25%;
+  width: 40%;
+}
+
+.taskNew {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newTask {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+  box-shadow: 5px 1px 35px black;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+.newTask:hover {
+  height: 35px;
+  width: 95%;
+  background: #a9a9a9;
+}
+
+.newTask:focus-visible {
+  outline: none;
+  height: 35px;
+  width: 65%;
+  background: #a9a9a9;
+}
+
+.addTask {
+  background: transparent;
+  border: none;
+  text-shadow: 5px 1px 15px black;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.fa-plus-square:hover {
+  text-shadow: 5px 1px 15px green;
+}
+
+.tasks-container {
+  width: 100%;
+  padding: 30px 20px;
+  margin-top: 20px;
+  box-shadow: 5px 1px 25px black;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #715999;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-itens: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  width: 80%;
+  margin-left: 9%;
+}
+
+.error {
+  box-shadow: 5px 1px 15px red !important;
+  background: #592929 !important;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.error:hover {
+  background: #592929;
+}
+
+.fa-trash:hover {
+  text-shadow: 5px 1px 15px red;
+  width: 30px;
+  cursor: pointer;
+}
+
+.fa-check-circle-o:hover {
+  text-shadow: 5px 1px 25px green;
+  margin-top: -4px;
+  cursor: pointer;
+}
+
+.completed {
+  display: flex;
+  justify-content: center;
+  align-itens: center;
+  background: green;
+  border-radius: 50%;
+  width: 35px;
+}
